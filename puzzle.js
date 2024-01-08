@@ -23,6 +23,7 @@ function shuffle(){
         imgsScramble[i] = numsAvailable[randIndx];
         numsAvailable.splice(randIndx, 1);
     }
+    //for ()
 }
 function selectpiece(){
 
