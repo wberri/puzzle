@@ -15,20 +15,18 @@ var image14 = document.getElementById(14);
 var image15 = document.getElementById(15);
 var image16 = document.getElementById(16);
 const reset = document.querySelector("#reset");
-startGame();{
-    properSetUp = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16];
-    var numsAvailable = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
-    var cardsScramble = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-    //randomizes card at each start of game
+function shuffle(){
+     var numsAvailable = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+    var imgsScramble = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
     for (let i = 0; i < 16; i++) {
         var randIndx = Math.floor(Math.random() * numsAvailable.length);
-        cardsScramble[i] = numsAvailable[randIndx];
+        imgsScramble[i] = numsAvailable[randIndx];
         numsAvailable.splice(randIndx, 1);
     }
 }
-selectpiece();{
+function selectpiece(){
 
 }
-checkDone();{
+function startGame(){
 
 }

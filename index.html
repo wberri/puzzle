@@ -11,11 +11,9 @@
     <h1>Picture Puzzle</h1>
     <body onload = "startGame()">
         <div id="buttons">
-            <button>Shuffle Cards</button>
+            <button onclick="shuffle()">Shuffle Cards</button>
             <button>Restart</button>
         </div>
-        
-        <butto
         <div id="grid"> 
             <div class="cell">
                 <img src="imgs/1.jpg" onclick = selectpiece(1); id="1">
@@ -69,5 +67,6 @@
                 <img src="imgs/16.jpg" onclick = selectpiece(16); id="16">
             </div>
         </div>
+        <script src="puzzle.js"></script>
 </body>
 </html>
