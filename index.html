@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Picture Puzzle</title>
     <link rel="stylesheet" typ="text/css" href="puzzle.css" />
+    <script src="puzzle.js" async></script>
 </head>
 <body>
     <h1>Picture Puzzle</h1>
-    <body onload = "startGame()">
+    <body>
         <div id="buttons">
-            <button onclick="shuffle()">Shuffle Cards</button>
+            <button id="starting">Shuffle Cards</button>
             <button>Restart</button>
         </div>
         <div id="grid"> 
@@ -67,6 +68,5 @@
                 <img src="imgs/16.jpg" onclick = selectpiece(16); id="16">
             </div>
         </div>
-        <script src="puzzle.js"></script>
 </body>
 </html>
